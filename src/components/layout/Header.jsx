@@ -30,7 +30,7 @@ function Header() {
           </ul>
           <div className="flex items-center gap-[2vw]">
             <div className="flex gap-[1.78vw] bg-grey-0 py-18 pr-[5.66vw] pl-[1.56vw] rounded-[1vw]">
-              <img className="w-[1.5vw]" src={search} alt="" />
+              <img className="w-[1.5vw]" src='/src/assets/icons/search.svg' alt="" />
               <input className="text-[1.1vw] text-black-100 placeholder:text-grey-100" type="text" placeholder="Search Art Work / Creator" />
             </div>
             <Link to='/dive-sea/sell' className="uppercase font-inter font-semibold text-[1.12vw] bg-black-100 text-white py-[1.12vw] px-[1.68vw] rounded-[1.12vw]">Connect Wallet</Link>
