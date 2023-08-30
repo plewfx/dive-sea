@@ -6,7 +6,7 @@ function Layout() {
   return (
     <>
         <Header />
-        <main className="flex-auto">
+        <main className="flex-auto pt-[10.3vw]">
             <Outlet />
         </main>
         <Footer />

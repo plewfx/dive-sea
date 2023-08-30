@@ -2,7 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-input {
-    background: none;
-    outline: none
+@layer components {
+    h1 {
+        color: theme(colors.black.100);
+        font-size: 5.2vw;
+        font-weight: 600;
+        line-height: theme(lineHeight.120);
+        letter-spacing: -0.208vw;
+        text-transform: capitalize;
+    }
+
+    input {
+        background: none;
+        outline: none;
+    }
+
+    .container {
+        max-width: 86%;
+        margin: 0 auto;
+    }
+
+    .bg-image {
+        background-repat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        svg {
+            background-repat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    svg {
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
