@@ -6,7 +6,7 @@ function Layout() {
   return (
     <>
         <Header />
-        <main className="flex-auto pt-[10.3vw]">
+        <main className="flex-auto pt-[10.3vw] overflow-hidden">
             <Outlet />
         </main>
         <Footer />

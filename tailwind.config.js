@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
     './index.html',
@@ -21,13 +22,18 @@ module.exports = {
       36: '2.25vw',
     },
     lineHeight: {
+      60: '60%',
       120: '120%',
+      140: '140%',
       150: '150%',
     },
     padding: {
+      14: '0.9vw',
       18: '1.25vw',
       21: '1.38vw',
-      30: '2vw'
+      30: '2vw',
+      70: '4.86vw',
+      100: '7vw'
     },
     gap: {
       5: '0.347vw',
@@ -51,24 +57,27 @@ module.exports = {
       16: '1.12vw',
       17: '1.18vw',
       22: '1.55vw',
+      23: '1.63vw',
       25: '1.736vw',
     },
     colors: {
       black: {
         0: '#000000',
-        100: '#141416',
-        200: '#201F1F',
-        300: '#23262F',
+        14: '#141416',
+        20: '#201F1F',
+        23: '#23262F',
       },
       white: '#ffffff',
       'grey': {
-        0: '#EDEDED',
-        100: '#C2C3CB',
-        200: '#606060',
-        300: '#F9F9F9',
-        400: '#676767',
-        500: '#848586',
-        600: '#FCFCFD',
+        ED: '#EDEDED',
+        C2: '#C2C3CB',
+        60: '#606060',
+        F9: '#F9F9F9',
+        67: '#676767',
+        84: '#848586',
+        FC: '#FCFCFD',
+        F1: '#F1F1F1',
+        C5: '#C5C5C5'
       },
     },
     gridColumn: {

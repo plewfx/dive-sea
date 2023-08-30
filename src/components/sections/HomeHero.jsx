@@ -101,9 +101,9 @@ const Dots = () => {
     )
 }
 
-const Switcher = ({ switcher, setSwitcher}) => {
+export const Switcher = ({ className, switcher, setSwitcher}) => {
     return (
-        <div className="rounded-17 bg-grey-600 p-21 absolute bottom-[-1.5vw] left-[5vw] grid grid-cols-3 grid-rows-1 gap-[2.4vw] after:w-[0.14vw] after:h-[1.8vw] after:bg-grey-0 after:justify-self-center shadow-[0_3vw_2.36vw_-1vw_rgba(15,15,15,0.12)]">
+        <div className={"rounded-17 bg-grey-FC p-21 grid grid-cols-3 grid-rows-1 gap-[2.4vw] after:w-[0.14vw] after:h-[1.8vw] after:bg-grey-ED after:justify-self-center shadow-[0_3vw_2.36vw_-1vw_rgba(15,15,15,0.12)] " + className}>
             <div className="w-[1.8vw] cursor-pointer" onClick={() => setSwitcher(prev => prev = 1)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                     <path fillRule="evenodd" clipRule="evenodd" d="M11.2397 8.38963C10.8023 7.98584 10.1203 8.01311 9.71654 8.45055L6.23402 12.2232C5.85287 12.6361 5.85287 13.2726 6.23401 13.6855L9.71653 17.4583C10.1203 17.8957 10.8023 17.923 11.2397 17.5192C11.6772 17.1154 11.7045 16.4335 11.3007 15.996L9.48802 14.0323L19.9611 14.0323C20.5565 14.0323 21.0391 13.5497 21.0391 12.9544C21.0391 12.3591 20.5565 11.8765 19.9611 11.8765L9.48805 11.8765L11.3007 9.91283C11.7044 9.47539 11.6772 8.79343 11.2397 8.38963Z" fill={switcher === 0 ? "#929292" : '#23262F'}/>
@@ -127,9 +127,9 @@ const HomeHero = () => {
         <section className="pt-[7.708vw] pb-[10vw] overflow-hidden">
             <div className="container grid grid-cols-2">
                 <div className="flex flex-col gap-45">
-                    <div className="flex flex-col gap-15 before:w-[30%] before:bg-black-200 before:h-1 before:opacity-20">
+                    <div className="flex flex-col gap-15 before:w-[30%] before:bg-black-20 before:h-1 before:opacity-20">
                         <h1>Discover And Create NFTs</h1>
-                        <p className="font-inter text-18 text-grey-400 max-w-[80%]">Discover, Create and Sell NFTs On Our NFT Marketplace With Over Thousands Of NFTs And Get a <span className="text-black-100 font-semibold">$20 bonus</span>.</p>
+                        <p className="font-inter text-18 text-grey-67 max-w-[80%]">Discover, Create and Sell NFTs On Our NFT Marketplace With Over Thousands Of NFTs And Get a <span className="text-black-100 font-semibold">$20 bonus</span>.</p>
                     </div>
                     <div className="flex flex-col gap-100">
                         <div className="flex gap-25">
@@ -138,16 +138,16 @@ const HomeHero = () => {
                         </div>
                         <div className="flex items-center gap-65">
                             <div className="flex flex-col">
-                                <h3 className="font-public-sans text-black-100 text-36">{artWorks}K+</h3>
-                                <span className="text-12 text-grey-500">Art Works</span>
+                                <h3 className="font-public-sans text-black-14 text-36">{artWorks}K+</h3>
+                                <span className="text-12 text-grey-84">Art Works</span>
                             </div>
                             <div className="flex flex-col">
-                                <h3 className="font-public-sans text-black-100 text-36">{creators}K+</h3>
-                                <span className="text-12 text-grey-500">Creators</span>
+                                <h3 className="font-public-sans text-black-14 text-36">{creators}K+</h3>
+                                <span className="text-12 text-grey-84">Creators</span>
                             </div>
                             <div className="flex flex-col">
-                                <h3 className="font-public-sans text-black-100 text-36">{collections}K+</h3>
-                                <span className="text-12 text-grey-500">Collections</span>
+                                <h3 className="font-public-sans text-black-14 text-36">{collections}K+</h3>
+                                <span className="text-12 text-grey-84">Collections</span>
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ const HomeHero = () => {
                     <div className={"absolute bg-image bg-[url('/src/assets/nft/1.jpg')] after:-z-10 after:absolute after:bg-[url('/src/assets/nft/1.jpg')] after:blur-[3vw] duration-1000 " + (switcher === 1 ? 'bottom-[24%] right-[40%] rounded-25 w-[27.1vw] h-[27.4vw] after:w-[27.1vw] after:h-[27.4vw]' : 'bottom-[0%] right-[-20%] rounded-22 w-[22.16vw] h-[22.3vw] after:w-[20.16vw] after:h-[20.3vw]')}></div>
                     <Arrow />
                     <Dots />
-                    <Switcher switcher={switcher} setSwitcher={setSwitcher}/>
+                    <Switcher className='absolute bottom-[-1.5vw] left-[5vw]' switcher={switcher} setSwitcher={setSwitcher} />
                 </div>
             </div>
         </section>

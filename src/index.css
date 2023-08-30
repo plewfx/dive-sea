@@ -4,12 +4,37 @@
 
 @layer components {
     h1 {
-        color: theme(colors.black.100);
+        color: theme(colors.black.14);
         font-size: 5.2vw;
         font-weight: 600;
         line-height: theme(lineHeight.120);
         letter-spacing: -0.208vw;
         text-transform: capitalize;
+    }
+
+
+    h2 {
+        color: theme(colors.black.14);
+        font-size: 3.47vw;
+        font-weight: 600;        
+    }
+    
+    h3 {
+        color: theme(colors.black.14);
+        font-size: 3.125vw;
+        font-weight: 600;
+    }
+    
+    h4 {
+        color: theme(colors.black.14);
+        font-size: 2.43vw;
+        font-weight: 600;
+    }
+    
+    h5 {
+        color: theme(colors.black.14);
+        font-size: 1.47vw;
+        font-weight: 600;
     }
 
     input {
@@ -23,15 +48,9 @@
     }
 
     .bg-image {
-        background-repat: no-repeat;
+        background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        
-        svg {
-            background-repat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
     }
 
     svg {
