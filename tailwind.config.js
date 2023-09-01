@@ -27,9 +27,15 @@ module.exports = {
       140: '140%',
       150: '150%',
     },
+    letterSpacing: {
+      0.1: '0.008vw'
+    },
     padding: {
+      9: '0.625vw',
+      10: '0.7vw',
       14: '0.9vw',
       18: '1.25vw',
+      19: '1.315vw',
       21: '1.38vw',
       30: '2vw',
       70: '4.86vw',
@@ -52,6 +58,8 @@ module.exports = {
       100: '7vw',
     },
     borderRadius: {
+      10: '0.7vw',
+      11: '0.76vw',
       12: '0.86vw',
       14: '1vw',
       16: '1.12vw',
@@ -59,6 +67,10 @@ module.exports = {
       22: '1.55vw',
       23: '1.63vw',
       25: '1.736vw',
+    },
+    borderWidth: {
+      1: '0.07vw',
+      2: '0.14vw'
     },
     colors: {
       black: {
@@ -68,7 +80,7 @@ module.exports = {
         23: '#23262F',
       },
       white: '#ffffff',
-      'grey': {
+      grey: {
         ED: '#EDEDED',
         C2: '#C2C3CB',
         60: '#606060',
@@ -79,6 +91,9 @@ module.exports = {
         F1: '#F1F1F1',
         C5: '#C5C5C5'
       },
+      blue: {
+        94: '#94A3B8',
+      }
     },
     gridColumn: {
       50: 'repeat(2, 1fr)',

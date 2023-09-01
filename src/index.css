@@ -4,7 +4,6 @@
 
 @layer components {
     h1 {
-        color: theme(colors.black.14);
         font-size: 5.2vw;
         font-weight: 600;
         line-height: theme(lineHeight.120);
@@ -12,27 +11,22 @@
         text-transform: capitalize;
     }
 
-
     h2 {
-        color: theme(colors.black.14);
         font-size: 3.47vw;
         font-weight: 600;        
     }
     
     h3 {
-        color: theme(colors.black.14);
         font-size: 3.125vw;
         font-weight: 600;
     }
     
     h4 {
-        color: theme(colors.black.14);
         font-size: 2.43vw;
         font-weight: 600;
     }
     
     h5 {
-        color: theme(colors.black.14);
         font-size: 1.47vw;
         font-weight: 600;
     }
@@ -57,4 +51,24 @@
         max-width: 100%;
         max-height: 100%;
     }
+
+    .theme-switcher {
+        background-image: url('/dive-sea/src/assets/icons/sun.svg');
+        background-position: center;
+        background-size: cover;
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+}
+
+html.dark .logo path {
+    fill: theme(textColor.grey.C5)
+}
+
+html.dark .search path {
+    stroke: theme(textColor.grey.C5)
+}
+
+html.dark .ethereum path {
+    fill: theme(textColor.grey.C5)
 }

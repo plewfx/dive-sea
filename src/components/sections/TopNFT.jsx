@@ -8,15 +8,16 @@ const TopNFT = () => {
     const [switcher, setSwitcher] = useState(0)
 
     return (
-        <section className="pt-70 pb-100 bg-grey-F1">
-            <div className="container flex flex-col gap-100 items-center relative">
-                <h3 className="text-grey-C5">Weekly - Top NFT</h3>
-                <div className="flex justify-start gap-40 overflow-x-scroll snap-x">
+        <section className="pt-70 pb-100 bg-grey-F1 dark:bg-black-14">
+            <div className="container flex flex-col gap-100 relative">
+                <h3 className="text-grey-C5 text-center">Weekly - Top NFT</h3>
+                <div className={"flex gap-40 " + (switcher === 1 ? 'justify-start' : 'justify-end')}>
                     {
                         NFTs.map(nft => {
                             return (
                                 <NFT
                                     key={nft.id}
+                                    img={nft.img}
                                     id={nft.id}
                                     time={nft.time}
                                     name={nft.name}
@@ -26,7 +27,7 @@ const TopNFT = () => {
                         })
                     }
                 </div>
-                <Switcher switcher={switcher} setSwitcher={setSwitcher} />
+                <Switcher className={'self-center'} switcher={switcher} setSwitcher={setSwitcher} />
             </div>
         </section>
     )
