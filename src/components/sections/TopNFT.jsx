@@ -20,7 +20,7 @@ const TopNFT = () => {
                             return (
                                 <NFT
                                     key={nft.id}
-                                    img={nft.id}
+                                    img={nft.img}
                                     id={nft.id}
                                     time={nft.time}
                                     name={nft.name}
