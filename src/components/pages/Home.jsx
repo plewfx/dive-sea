@@ -1,4 +1,5 @@
 import HomeHero from "../sections/HomeHero"
+import TopCollections from "../sections/TopCollections"
 import TopNFT from "../sections/TopNFT"
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
         <HomeHero />
         <TopNFT />
+        <TopCollections />
     </>
   )
 }
