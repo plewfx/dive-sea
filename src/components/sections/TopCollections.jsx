@@ -33,7 +33,7 @@ const TopCollections = () => {
                                 return (
                                     <tr key={col.id} className="grid grid-cols-7 items-center justify-items-end border-b-grey-EB pb-30 border-b-2">
                                         <td className="grid grid-rows-2 grid-cols-[5.83vw_100%] gap-x-20 col-span-2 justify-start w-full">
-                                            <div style={{backgroundImage: `url(${col.img})`}} className={`bg-image w-[5.8vw] h-[5.8vw] rounded-[50%] row-span-full`}></div>
+                                            <div style={{backgroundImage: `url(${col.img})`}} className={`bg-image w-[5.8vw] h-[5.8vw] rounded-1.2 row-span-full`}></div>
                                             <h4 className="text-28">{col.name}</h4>
                                             <span className="text-grey-64 text-22">By {col.author}</span>
                                         </td>

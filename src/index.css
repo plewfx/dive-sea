@@ -36,6 +36,10 @@
         outline: none;
     }
 
+    a {
+        cursor: pointer;
+    }
+
     .container {
         max-width: 86%;
         margin: 0 auto;
