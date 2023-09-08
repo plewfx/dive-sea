@@ -76,3 +76,23 @@ html.dark .search path {
 html.dark .ethereum path {
     fill: theme(textColor.grey.C5)
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.4vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #C5C5C5;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #141416; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000; 
+}

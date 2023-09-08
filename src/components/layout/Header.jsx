@@ -45,10 +45,10 @@ function Header() {
             </div>
             <Link to='/dive-sea/sell' className="uppercase font-inter font-semibold text-16 bg-black-14 text-white leading-150 py-[1.12vw] px-[1.68vw] rounded-16 dark:text-black-14 dark:bg-grey-F9">Connect Wallet</Link>
           </div>
-          <div>
+{/* {          <div>
             <div className="cursor-pointer theme-switcher dark:bg-[url(/dive-sea/src/assets/icons/moon.svg)]" onClick={() => switchTheme()}>
             </div>
-          </div>
+          </div>} */}
         </nav>
       </div>
     </header>
