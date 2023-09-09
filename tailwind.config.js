@@ -6,6 +6,9 @@ module.exports = {
     './index.html',
   ],
   theme: {
+    screens: {
+      'md': {'max': '700px'}
+    },
     fontFamily: {
       'poppins': ['Poppins', 'sans-serif'],
       'inter': ['Inter', 'sans-serif'],
@@ -94,7 +97,7 @@ module.exports = {
     },
     gap: {
       5: '0.347vw',
-      9: '0.625',
+      9: '0.625vw',
       10: '0.694vw',
       11: '0.76vw',
       12: '0.83vw',
@@ -116,6 +119,7 @@ module.exports = {
       100: '7vw',
     },
     animation: {
+      spinCircle05: 'spin 1s linear infinite',
       spinCircle1: 'spin 10s linear infinite',
       spinCircle2: 'spin 15s linear infinite'
     },

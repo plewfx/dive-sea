@@ -1,0 +1,9 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25ZM10 25C10 33.2843 16.7157 40 25 40C33.2843 40 40 33.2843 40 25C40 16.7157 33.2843 10 25 10C16.7157 10 10 16.7157 10 25Z" fill="url(#paint0_angular_1_3175)"/>
+<defs>
+<radialGradient id="paint0_angular_1_3175" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(25 25) rotate(90) scale(25)">
+<stop stop-color="#999999"/>
+<stop offset="1" stop-color="#999999" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
