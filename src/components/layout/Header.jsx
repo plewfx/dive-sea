@@ -1,12 +1,24 @@
 import { Link, NavLink } from "react-router-dom"
 import useScreenSizeStore from '../../useScreenSizeStore'
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 const links = [
-  'Discover',
-  'creators',
-  'Sell',
-  'stats'
+  {
+    text: 'Discover',
+    url: 'NFTs'
+  },
+  {
+    text: 'Creators',
+    url: 'creators'
+  },
+  {
+    text: 'Sell',
+    url: 'sell'
+  },
+  {
+    text: 'Stats',
+    url: 'stats'
+  },
 ]
 
 function switchTheme() {
@@ -14,18 +26,18 @@ function switchTheme() {
 }
  
 function Header() {
-  const { screenSize, updateScreenSize } = useScreenSizeStore();
+  // const { screenSize, updateScreenSize } = useScreenSizeStore();
 
-  useEffect(() => {
-    const updateDimension = () => {
-      updateScreenSize();
-    };
-    window.addEventListener('resize', updateDimension);
+  // useEffect(() => {
+  //   const updateDimension = () => {
+  //     updateScreenSize();
+  //   };
+  //   window.addEventListener('resize', updateDimension);
 
-    return () => {
-      window.removeEventListener('resize', updateDimension);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('resize', updateDimension);
+  //   };
+  // }, []);
 
   // const [openBurger, setOpenBurger] = useState(false)
 
@@ -44,30 +56,30 @@ function Header() {
             }
           </Link>
           {
-            screenSize.width < 700 ?
-            <div className={"opacity-0 fixed top-0 left-0 bottom-0 right-0 bg-[rgba(255,_255,_255,_0.9)] flex flex-col justify-center items-center gap-100"}>
-              <ul className="flex flex-col gap-55 items-center">
-                {
-                  links.map(link => {
-                    return (
-                      <li className="font-inter text-grey-200 font-medium dark:text-grey-C5" key={link}>
-                        <NavLink style={({ isActive }) => isActive ? {color: '#141416'} : null} className="uppercase text-[5vw] leading-150" to={link.toLowerCase()}>{link}</NavLink>
-                      </li>
-                    )
-                  })
-                }
-              </ul>
-              <div className="flex flex-col items-center gap-[7vw]">
-                <div className="flex gap-[5vw] bg-grey-ED py-[7vw] pr-[10vw] pl-[5vw] rounded-[5vw] dark:bg-black-14 dark:border-grey-C5 dark:border-2">
-                  <svg className="search w-[7vw]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M9.94976 17.7296C14.5695 17.7296 18.3146 13.9845 18.3146 9.3648C18.3146 4.74505 14.5695 1 9.94976 1C5.33001 1 1.58496 4.74505 1.58496 9.3648C1.58496 13.9845 5.33001 17.7296 9.94976 17.7296Z" stroke="#9D9D9D" strokeWidth="1.79246" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M15.9248 15.3394L23.0946 22.5092" stroke="#9D9D9D" strokeWidth="1.79246" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                  <input className="text-[5vw] leading-120 text-black-100 placeholder:text-grey-C5" type="text" placeholder="Search Art Work / Creator" />
-                </div>
-                <Link to='/dive-sea/sell' className="uppercase font-inter font-semibold text-[7vw] bg-black-14 text-white leading-150 py-[5vw] px-[6vw] rounded-[5vw] dark:text-black-14 dark:bg-grey-F9">Connect Wallet</Link>
-              </div>
-            </div> :
+            // screenSize.width < 700 ?
+            // <div className={"opacity-0 fixed top-0 left-0 bottom-0 right-0 bg-[rgba(255,_255,_255,_0.9)] flex flex-col justify-center items-center gap-100"}>
+            //   <ul className="flex flex-col gap-55 items-center">
+            //     {
+            //       links.map(link => {
+            //         return (
+            //           <li className="font-inter text-grey-200 font-medium dark:text-grey-C5" key={link.url}>
+            //             <NavLink style={({ isActive }) => isActive ? {color: '#141416'} : null} className="uppercase text-[5vw] leading-150" to={link.url}>{link.text}</NavLink>
+            //           </li>
+            //         )
+            //       })
+            //     }
+            //   </ul>
+            //   <div className="flex flex-col items-center gap-[7vw]">
+            //     <div className="flex gap-[5vw] bg-grey-ED py-[7vw] pr-[10vw] pl-[5vw] rounded-[5vw] dark:bg-black-14 dark:border-grey-C5 dark:border-2">
+            //       <svg className="search w-[7vw]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            //         <path d="M9.94976 17.7296C14.5695 17.7296 18.3146 13.9845 18.3146 9.3648C18.3146 4.74505 14.5695 1 9.94976 1C5.33001 1 1.58496 4.74505 1.58496 9.3648C1.58496 13.9845 5.33001 17.7296 9.94976 17.7296Z" stroke="#9D9D9D" strokeWidth="1.79246" strokeLinecap="round" strokeLinejoin="round"/>
+            //         <path d="M15.9248 15.3394L23.0946 22.5092" stroke="#9D9D9D" strokeWidth="1.79246" strokeLinecap="round" strokeLinejoin="round"/>
+            //       </svg>
+            //       <input className="text-[5vw] leading-120 text-black-100 placeholder:text-grey-C5" type="text" placeholder="Search Art Work / Creator" />
+            //     </div>
+            //     <Link to='/dive-sea/sell' className="uppercase font-inter font-semibold text-[7vw] bg-black-14 text-white leading-150 py-[5vw] px-[6vw] rounded-[5vw] dark:text-black-14 dark:bg-grey-F9">Connect Wallet</Link>
+            //   </div>
+            // </div> :
             <>
               <ul className="flex gap-55">
                 {
@@ -75,8 +87,8 @@ function Header() {
                     return (
                       <li
                       // onClick={(setOpenBurger(prev => !prev))} 
-                      className="font-inter text-grey-200 font-medium dark:text-grey-C5" key={link}>
-                        <NavLink style={({ isActive }) => isActive ? {color: '#141416'} : null} className="uppercase text-18 leading-150" to={link.toLowerCase()}>{link}</NavLink>
+                      className="font-inter text-grey-200 font-medium dark:text-grey-C5" key={link.url}>
+                        <NavLink style={({ isActive }) => isActive ? {color: '#141416'} : null} className="uppercase text-18 leading-150" to={link.url}>{link.text}</NavLink>
                       </li>
                     )
                   })
@@ -99,13 +111,13 @@ function Header() {
             </div>
           </div>} */}
           {
-            screenSize.width < 700 ?
-            <div
-            // onClick={() => setOpenBurger(prev => !prev)}
-            className="relative z-50 flex flex-col gap-[2.66vw] w-[8.4vw] after:w-full after:h-[0.5vw] after:rounded-10 after:bg-black-14 before:w-full before:h-[0.5vw] before:rounded-10 before:bg-black-14">
-              <span className="w-full h-[0.5vw] rounded-10 bg-black-14"></span>
-            </div> :
-            null
+            // screenSize.width < 700 ?
+            // <div
+            // // onClick={() => setOpenBurger(prev => !prev)}
+            // className="relative z-50 flex flex-col gap-[2.66vw] w-[8.4vw] after:w-full after:h-[0.5vw] after:rounded-10 after:bg-black-14 before:w-full before:h-[0.5vw] before:rounded-10 before:bg-black-14">
+            //   <span className="w-full h-[0.5vw] rounded-10 bg-black-14"></span>
+            // </div> :
+            // null
           }
         </nav>
       </div>

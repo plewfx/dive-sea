@@ -62,6 +62,7 @@ module.exports = {
       25: '1.73vw',
       26: '1.8vw',
       30: '2vw',
+      35: '2.4vw',
       70: '4.86vw',
       90: '6.25vw',
       100: '7vw',
@@ -117,6 +118,7 @@ module.exports = {
       80: '5.55vw',
       90: '6vw',
       100: '7vw',
+      130: '9vw',
     },
     animation: {
       spinCircle05: 'spin 1s linear infinite',
@@ -166,6 +168,7 @@ module.exports = {
         84: '#848586',
         FC: '#FCFCFD',
         F1: '#F1F1F1',
+        C3: '#C3C3C3',
         C5: '#C5C5C5',
         93: '#93989A',
         EB: '#EBE9E9',
@@ -176,6 +179,7 @@ module.exports = {
         D2: '#D2D2D2',
         B9: '#B9B9B9',
         99: '#999999',
+        FA: '#FAFAFA',
       },
       blue: {
         94: '#94A3B8',
